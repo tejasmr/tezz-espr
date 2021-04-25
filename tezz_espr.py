@@ -129,7 +129,7 @@ def build_similarity_matrix(sentences, stop_words):
 
 """
 @type: function
-@head: generate_summary(sentences, top_n=5)
+@head: def generate_summary(sentences, top_n=5)
 @inputs:
     1. sentences: the array of sentences
     2. top_n: no of sentences to be in the summary
@@ -156,7 +156,6 @@ def generate_summary(sentences, top_n=5):
     # sort the rank
     ranked_sentences = sorted(((scores[i], s) for i, s in enumerate(sentences)), reverse=True)
 
-    n = min(len(ranked_sentences), top_n)
     # pick the top sentences
     for i in range(top_n):
         summarized_text.append(" ".join(ranked_sentences[i][1]))
@@ -166,7 +165,7 @@ def generate_summary(sentences, top_n=5):
 
 """
 @type: function
-@head: generate_summary_from_file(file_name, top_n=5)
+@head: def generate_summary_from_file(file_name, top_n=5)
 @inputs:
     1. file_name: the relative/absolute path of the file or the name of
                     the file if it is in the same directory
@@ -181,7 +180,7 @@ def generate_summary_from_file(file_name, top_n=5):
 
 """
 @type: function
-@head: generate_summary_from_document(document, top_n=5)
+@head: def generate_summary_from_document(document, top_n=5)
 @inputs:
     1. document: a string of sentences.
     2. top_n: no of sentences in the final summary
