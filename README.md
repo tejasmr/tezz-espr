@@ -82,7 +82,7 @@ Envisioned as a three-year collaborative program, Intelligent Cloud Hub will sup
     1. sentences: a python array of all the sentences extracted from the file
 ```
 
-#### 2. Extract sentences from document
+#### 2. Extract sentences from document
 
 ```py
 @type: function
