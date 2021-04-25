@@ -33,7 +33,7 @@ print(generate_summary_from_document(file_data[0], top_n=2))
 #### 1. Generate Summary from file
 ```py
 @type: function
-@head: generate_summary_from_file(file_name, top_n=5)
+@head: def generate_summary_from_file(file_name, top_n=5)
 @inputs:
     1. file_name: the relative/absolute path of the file or the name of
                     the file if it is in the same directory
@@ -45,7 +45,7 @@ print(generate_summary_from_document(file_data[0], top_n=2))
 #### 2. Generate Summary from Document/String
 ```py
 @type: function
-@head: generate_summary_from_document(document, top_n=5)
+@head: def generate_summary_from_document(document, top_n=5)
 @inputs:
     1. document: a string of sentences.
     2. top_n: no of sentences in the final summary
